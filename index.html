@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paws &amp; Pixels – Pet &amp; Digital Goods</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-rPSr3IKTrt1hyNX79rrmS0mmZzQ4wWn1n2rJfZeTwr84HUdKMm8X1rWtzGJ7nM613rRh6OqxG7B9z0cG3bYy/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="brand"><img src="assets/logo.png" alt="Paws &amp; Pixels logo" class="logo">Paws &amp; Pixels</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#products">Shop</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="cart-icon" id="cartButton">
+                <i class="fa-solid fa-shopping-cart"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero section -->
+    <section class="hero">
+        <div class="hero-overlay">
+            <h1>Paws &amp; Pixels: Pet &amp; Digital Goods</h1>
+            <p>Shop trending pet accessories and digital downloads with zero inventory. Curated supplies and creative resources in one place.</p>
+            <a href="#products" class="btn primary-btn">Browse Collections</a>
+        </div>
+    </section>
+
+    <!-- Features section -->
+    <section class="features">
+        <h2>Why choose dropshipping &amp; digital products?</h2>
+        <div class="feature-grid">
+            <div class="feature">
+                <i class="fa-solid fa-box-open"></i>
+                <h3>No Inventory</h3>
+                <p>Sell products without stocking them. Our partners ship directly to your customers so you never have to handle a box.</p>
+            </div>
+            <div class="feature">
+                <i class="fa-solid fa-dollar-sign"></i>
+                <h3>High Profit Margins</h3>
+                <p>Digital goods and low‑cost products mean you keep more of what you sell. Invest less, earn more.</p>
+            </div>
+            <div class="feature">
+                <i class="fa-solid fa-fire"></i>
+                <h3>Trending Niches</h3>
+                <p>Focus on in‑demand categories like apparel, eco goods, pet accessories and digital planners to attract buyers.</p>
+            </div>
+            <div class="feature">
+                <i class="fa-solid fa-globe"></i>
+                <h3>Global Reach</h3>
+                <p>Serve customers worldwide with instant digital downloads and fast fulfillment from trusted suppliers.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products section -->
+    <section class="products" id="products">
+        <h2>Shop Our Collections</h2>
+        <div class="product-filter">
+            <button data-category="all" class="filter-btn active">All</button>
+            <button data-category="pets" class="filter-btn">Pets</button>
+            <button data-category="eco" class="filter-btn">Eco</button>
+            <button data-category="digital" class="filter-btn">Digital</button>
+        </div>
+        <div class="product-grid" id="productGrid">
+            <!-- Products will be injected here by script.js -->
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section class="about" id="about">
+        <h2>About Paws &amp; Pixels</h2>
+        <p>Paws &amp; Pixels is a St.&nbsp;John’s‑based venture committed to helping you run a profitable online business without carrying inventory. We curate fun and functional pet accessories alongside digital downloads like planners and templates, so you can cater to pet lovers and creative minds in one stop.</p>
+        <p>We follow e‑commerce research closely: focusing on high‑demand niches and using social‑first marketing can boost sales【349539444439413†L515-L519】. Digital products such as ebooks, templates and online courses have low overhead and high margins because they can be sold repeatedly【410039679060032†L160-L200】. The dropshipping model itself is low‑risk and allows you to sell without managing stock or shipping【727628616812994†L106-L123】.</p>
+        <p>If you’re aiming to earn your first $3,000 online, pair these insights with engaging product descriptions, quality suppliers and consistent social media promotion. Our ready‑to‑ship pet products and instant digital downloads make it easier than ever.</p>
+        <div class="footnotes">
+            <p><sup>1</sup> <a href="【349539444439413†L515-L519】" id="fn1" target="_blank">Evidence on focusing niches</a></p>
+            <p><sup>2</sup> <a href="【410039679060032†L160-L200】" id="fn2" target="_blank">Evidence on digital product benefits</a></p>
+            <p><sup>3</sup> <a href="【727628616812994†L106-L123】" id="fn3" target="_blank">Evidence on dropshipping benefits</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy;&nbsp;2025 Paws &amp; Pixels. All rights reserved. Contact us at <a href="mailto:contact@pawsandpixels.com">contact@pawsandpixels.com</a>.</p>
+    </footer>
+
+    <!-- Cart modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <h3>Your cart</h3>
+            <ul id="cartItems" class="cart-items"></ul>
+            <p class="total">Total: <span id="cartTotal">$0.00</span></p>
+            <button class="checkout-btn" id="checkoutBtn">Checkout</button>
+            <button class="close-cart" id="closeCartBtn">Close</button>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
